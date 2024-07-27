@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root
+{
+    --background-color: #eee;
+    --card-color: #fff;
+    --primary-text-color: #222;
+    --secondary-text-color: #444;
+    --heading-color: #222;
+}
+body
+{
+    background-color: var(--background-color);
+}
+.container
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container h1
+{
+    color: var(--heading-color);
+}
+.box
+{
+    padding: 30px;
+    height: 200px;
+    width: 400px;
+    border-radius: 4px;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--card-color);
+}
+.box:hover
+{
+    box-shadow: 0 0 2px rgb(75, 75, 75);
+}
+.box h2
+{
+    color: var(--primary-text-color);
+}
+.box p
+{
+    color:var(--secondary-text-color);
+}
+
+@media screen and (max-width: 1000px)
+{
+    :root
+    {
+    --background-color: #111;
+    --card-color: #333;
+    --primary-text-color: #fff;
+    --secondary-text-color: #ddd;
+    --heading-color: #fff;
+    }
+}
